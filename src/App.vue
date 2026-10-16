@@ -1,6 +1,9 @@
 <script setup>
 import Header from './components/Header.vue';
 import Footer from './components/Footer.vue';
+import Terminal from './components/Terminal.vue';
+import Card from './components/Card.vue';
+import Head2 from './components/Head2.vue';
 </script>
 
 <template>
@@ -53,33 +56,27 @@ import Footer from './components/Footer.vue';
 
       <!-- Right column: terminal -->
       <div class="w-full max-w-xl justify-self-center lg:justify-self-end">
-        <div class="overflow-hidden rounded-2xl border border-neutral-200 bg-[#0d0f14] shadow-2xl dark:border-white/10">
-          <div class="relative flex items-center gap-2 border-b border-white/10 px-4 py-3">
-            <span class="h-3 w-3 rounded-full bg-[#ff5f57]"></span>
-            <span class="h-3 w-3 rounded-full bg-[#febc2e]"></span>
-            <span class="h-3 w-3 rounded-full bg-[#28c840]"></span>
-            <span class="pointer-events-none absolute inset-x-0 text-center font-mono text-xs text-white/40">amirhossein — profile</span>
-          </div>
+        <Terminal title="amirhossein - profile">
           <div class="p-5 font-mono text-sm leading-7">
-            <p><span class="text-emerald-400">$ whoami</span></p>
-            <p class="text-white/80">Amirhossein Mirjamali</p>
+          <p><span class="text-emerald-400">$ whoami</span></p>
+          <p class="text-white/80">Amirhossein Mirjamali</p>
 
-            <p class="mt-4"><span class="text-emerald-400">$ cat profile.json</span></p>
-            <pre class="mt-2 overflow-x-auto rounded-xl border border-white/10 bg-white/5 p-4 text-xs leading-6 text-white/70">{
-  <span class="text-white/50">"role"</span>: <span class="text-accent-soft">"Backend Developer"</span>,
-  <span class="text-white/50">"location"</span>: <span class="text-accent-soft">"Yazd, IR"</span>,
-  <span class="text-white/50">"experience"</span>: <span class="text-accent-soft">"1+ year"</span>,
-  <span class="text-white/50">"framework"</span>: <span class="text-accent-soft">"Django"</span>,
-  <span class="text-white/50">"focus"</span>: <span class="text-accent-soft">"REST API"</span>
+          <p class="mt-4"><span class="text-emerald-400">$ cat profile.json</span></p>
+    <pre class="mt-2 overflow-x-auto rounded-xl border border-white/10 bg-white/5 p-4 text-xs leading-6 text-white/70">{
+    <span class="text-white/50">"role"</span>: <span class="text-accent-soft">"Backend Developer"</span>,
+    <span class="text-white/50">"location"</span>: <span class="text-accent-soft">"Yazd, IR"</span>,
+    <span class="text-white/50">"experience"</span>: <span class="text-accent-soft">"1+ year"</span>,
+    <span class="text-white/50">"framework"</span>: <span class="text-accent-soft">"Django"</span>,
+    <span class="text-white/50">"focus"</span>: <span class="text-accent-soft">"Micro Service & REST API"</span>
 }</pre>
 
-            <p class="mt-4"><span class="text-emerald-400">$ status</span></p>
-            <p class="flex items-center gap-2 text-xs text-accent-soft">
-              <span class="h-2 w-2 shrink-0 bg-accent-soft"></span>
-              Ready for new challenges &amp; collaborations...
-            </p>
-          </div>
+          <p class="mt-4"><span class="text-emerald-400">$ status</span></p>
+          <p class="flex items-center gap-2 text-xs text-accent-soft">
+            <span class="h-2 w-2 shrink-0 bg-accent-soft"></span>
+            Ready for new challenges &amp; collaborations...
+          </p>
         </div>
+        </Terminal>
       </div>
     </section>
 
@@ -88,12 +85,12 @@ import Footer from './components/Footer.vue';
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="text-center">
           <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-soft">About Me</p>
-          <h2 class="mx-auto mt-4 max-w-2xl text-3xl font-bold tracking-tight md:text-4xl">Engineering robust solutions from the ground up</h2>
+          <Head2>Engineering robust solutions from the ground up</Head2>
         </div>
 
         <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
           <!-- Card 1 -->
-          <article class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm transition-colors duration-300 dark:border-white/10 dark:bg-white/5 dark:shadow-none">
+          <Card>
             <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-accent-soft/10 text-accent-soft">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
@@ -104,10 +101,10 @@ import Footer from './components/Footer.vue';
             <p class="mt-3 text-sm leading-relaxed text-neutral-500 dark:text-white/60">
               Living and working from the historic city of Yazd. Passionate about collaborating remotely with teams and companies globally and locally.
             </p>
-          </article>
+          </Card>
 
           <!-- Card 2 -->
-          <article class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm transition-colors duration-300 dark:border-white/10 dark:bg-white/5 dark:shadow-none">
+          <Card>
             <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-accent-soft/10 text-accent-soft">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
@@ -120,10 +117,10 @@ import Footer from './components/Footer.vue';
             <p class="mt-3 text-sm leading-relaxed text-neutral-500 dark:text-white/60">
               Deep mastery of Python including advanced Object-Oriented Programming (OOP), asynchronous programming (Asyncio), and expert-level usage of the Django framework.
             </p>
-          </article>
+          </Card>
 
           <!-- Card 3 -->
-          <article class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm transition-colors duration-300 dark:border-white/10 dark:bg-white/5 dark:shadow-none">
+          <Card>
             <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-emerald-400/10 text-emerald-500 dark:text-emerald-400">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-5 w-5">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
@@ -133,7 +130,7 @@ import Footer from './components/Footer.vue';
             <p class="mt-3 text-sm leading-relaxed text-neutral-500 dark:text-white/60">
               While focused on backend and REST API design, I am also well-versed in frontend technologies including HTML, CSS, JavaScript, and Vue.js to build complete solutions.
             </p>
-          </article>
+          </Card>
         </div>
       </div>
     </section>
@@ -143,13 +140,13 @@ import Footer from './components/Footer.vue';
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="text-center">
           <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-soft">Expertise &amp; Stack</p>
-          <h2 class="mt-4 text-3xl font-bold tracking-tight md:text-4xl">Technologies I work with daily</h2>
+          <Head2>Technologies I work with daily</Head2>
         </div>
 
         <div class="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
 
           <!-- 01 Backend & Python -->
-          <div class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm transition-colors duration-300 dark:border-white/10 dark:bg-white/5 dark:shadow-none">
+          <Card>
             <div class="flex items-center gap-3">
               <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-soft/10 font-mono text-xs font-semibold text-accent-soft">01</span>
               <h3 class="text-sm font-semibold">Backend &amp; Python</h3>
@@ -168,10 +165,10 @@ import Footer from './components/Footer.vue';
                 <span class="font-mono text-[10px] text-accent-soft">Expert</span>
               </li>
             </ul>
-          </div>
+          </Card>
 
           <!-- 02 Data & Caching -->
-          <div class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm transition-colors duration-300 dark:border-white/10 dark:bg-white/5 dark:shadow-none">
+          <Card>
             <div class="flex items-center gap-3">
               <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-soft/10 font-mono text-xs font-semibold text-accent-soft">02</span>
               <h3 class="text-sm font-semibold">Data &amp; Caching</h3>
@@ -190,10 +187,10 @@ import Footer from './components/Footer.vue';
                 <span class="font-mono text-[10px] text-accent-soft">Skilled</span>
               </li>
             </ul>
-          </div>
+          </Card>
 
           <!-- 03 DevOps & Infra -->
-          <div class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm transition-colors duration-300 dark:border-white/10 dark:bg-white/5 dark:shadow-none">
+          <Card>
             <div class="flex items-center gap-3">
               <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-emerald-400/10 font-mono text-xs font-semibold text-emerald-500 dark:text-emerald-400">03</span>
               <h3 class="text-sm font-semibold">DevOps &amp; Infra</h3>
@@ -212,10 +209,10 @@ import Footer from './components/Footer.vue';
                 <span class="font-mono text-[10px] text-emerald-500 dark:text-emerald-400">Skilled</span>
               </li>
             </ul>
-          </div>
+          </Card>
 
           <!-- 04 Frontend Stack -->
-          <div class="rounded-2xl border border-neutral-200 bg-white p-5 shadow-sm transition-colors duration-300 dark:border-white/10 dark:bg-white/5 dark:shadow-none">
+          <Card>
             <div class="flex items-center gap-3">
               <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-accent-soft/10 font-mono text-xs font-semibold text-accent-soft">04</span>
               <h3 class="text-sm font-semibold">Frontend Stack</h3>
@@ -234,7 +231,7 @@ import Footer from './components/Footer.vue';
                 <span class="font-mono text-[10px] text-amber-500 dark:text-amber-300">Proficient</span>
               </li>
             </ul>
-          </div>
+          </Card>
 
         </div>
       </div>
@@ -245,11 +242,11 @@ import Footer from './components/Footer.vue';
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="text-center">
           <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-soft">Featured Work</p>
-          <h2 class="mt-4 text-3xl font-bold tracking-tight md:text-4xl">Recent Projects</h2>
+          <Head2>Recent Projects</Head2>
         </div>
 
         <div class="mx-auto mt-12 max-w-2xl">
-          <article class="rounded-2xl border border-neutral-200 bg-white p-6 shadow-sm transition-colors duration-300 md:p-8 dark:border-white/10 dark:bg-white/5 dark:shadow-none">
+          <Card >
             <div class="flex items-start justify-between">
               <span class="rounded-full border border-accent-soft/20 bg-accent-soft/10 px-3 py-1 font-mono text-[11px] text-accent-soft">Backend API</span>
               <a href="#" aria-label="AmirMovie on GitHub" class="text-neutral-400 transition-colors hover:text-neutral-900 dark:text-white/40 dark:hover:text-white">
@@ -270,7 +267,7 @@ import Footer from './components/Footer.vue';
               <span class="rounded-md border border-neutral-200 bg-neutral-100 px-2.5 py-1 font-mono text-[11px] text-emerald-600 dark:border-white/10 dark:bg-white/5 dark:text-emerald-400">Elasticsearch</span>
               <span class="rounded-md border border-neutral-200 bg-neutral-100 px-2.5 py-1 font-mono text-[11px] text-accent-soft dark:border-white/10 dark:bg-white/5">Pytest</span>
             </div>
-          </article>
+          </Card>
         </div>
       </div>
     </section>
@@ -279,7 +276,7 @@ import Footer from './components/Footer.vue';
     <section id="contact" class="border-t border-neutral-200 py-20 transition-colors duration-300 dark:border-white/10 dark:bg-white/[0.02]">
       <div class="mx-auto max-w-3xl px-6 text-center lg:px-8">
         <p class="font-mono text-xs font-medium uppercase tracking-widest text-accent-soft">Get In Touch</p>
-        <h2 class="mt-4 text-3xl font-bold tracking-tight md:text-4xl">Let's build something exceptional together</h2>
+        <Head2>Let's build something exceptional together</Head2>
         <p class="mx-auto mt-5 max-w-xl text-base leading-relaxed text-neutral-500 dark:text-white/60">
           Whether you have a project in mind, want to discuss backend architecture, or just want to connect, my inbox is always open.
         </p>
