@@ -35,7 +35,7 @@ changeTheme()
     <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
       <a href="" class="flex items-center gap-2.5">
         <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-accent-soft text-sm font-bold text-neutral-900">AH</span>
-        <span class="text-lg font-semibold tracking-tight">amirhossein<span class="text-accent-soft">.dev</span></span>
+        <span class="text-lg font-semibold tracking-tight">mirjamal<span class="text-accent-soft">.ir</span></span>
       </a>
 
       <nav class="flex items-center gap-2 sm:gap-3">
