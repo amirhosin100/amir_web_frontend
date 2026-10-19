@@ -23,7 +23,7 @@ import Head2 from './components/Head2.vue';
 
         <h1 class="mt-6 text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl">
           Hi, I'm
-          <span class="mt-1 block font-['Dancing_Script'] text-6xl font-semibold text-accent-soft md:text-8xl">AmirHossein.</span>
+          <span class="mt-1 block font-['Dancing_Script'] text-6xl font-semibold text-accent-soft md:text-8xl">AmirHossein</span>
         </h1>
 
         <p class="mt-6 max-w-lg text-base leading-relaxed text-neutral-500 dark:text-white/60">
