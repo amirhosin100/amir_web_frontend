@@ -198,7 +198,7 @@ import Head2 from './components/Head2.vue';
             <ul class="mt-5 space-y-2.5 text-xs">
               <li class="flex items-center justify-between rounded-lg border border-neutral-200 bg-neutral-100 px-3 py-3 dark:border-white/10 dark:bg-white/5">
                 <span class="text-neutral-700 dark:text-white/80">Docker</span>
-                <span class="font-mono text-[10px] text-emerald-500 dark:text-emerald-400">Skilled</span>
+                <span class="font-mono text-[10px] text-emerald-500 dark:text-emerald-400">Expert</span>
               </li>
               <li class="flex items-center justify-between rounded-lg border border-neutral-200 bg-neutral-100 px-3 py-3 dark:border-white/10 dark:bg-white/5">
                 <span class="text-neutral-700 dark:text-white/80">Linux OS &amp; Shell</span>
