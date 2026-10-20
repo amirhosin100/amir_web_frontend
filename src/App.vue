@@ -21,16 +21,16 @@ import Head2 from './components/Head2.vue';
           Backend Developer
         </span>
 
-        <h1 class="mt-6 text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl">
+        <h2 class="mt-6 text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl">
           Hi, I'm
           <span class="mt-1 block font-['Dancing_Script'] text-6xl font-semibold text-accent-soft md:text-8xl">AmirHossein</span>
-        </h1>
+        </h2>
 
-        <p class="mt-6 max-w-lg text-base leading-relaxed text-neutral-500 dark:text-white/60">
-          I am Amirhossein Mirjamali, a backend developer. I work with
+        <div class="mt-6 max-w-lg text-base leading-relaxed text-neutral-500 dark:text-white/60">
+          I am <h1 class="inline">Amirhossein Mirjamali</h1>, a backend developer. I work with
           <span class="font-semibold text-accent-soft">Django</span> and focus primarily on designing and building robust
           <span class="font-semibold text-accent-soft">REST API</span> services.
-        </p>
+        </div>
 
         <div class="mt-8 flex flex-wrap items-center gap-3">
           <a href="#skills" class="rounded-xl bg-linear-to-r from-accent-soft to-accent px-6 py-3 text-sm font-semibold text-neutral-900 transition hover:brightness-105">Explore Skills</a>
